@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="calculadora.js"></script>
+    <title>Calculadora de Capacidad de Acuario</title>
+    <style>
+      /* Estilos para el contenedor de la calculadora */
+      .calculator {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+      }
+
+      /* Estilos para el contenedor de los campos de ingreso y botones */
+      .input-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      /* Estilos para los botones */
+      button {
+        margin-right: 10px;
+      }
+
+      /* Estilos para el resultado */
+      #litros,
+      #galones {
+        font-size: 24px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="input-container">
+        <label>Ingrese el Largo en cm:</label>
+        <input type="number" id="largo">
+      </div>
+      <div class="input-container">
+        <label>Ingrese el Alto en cm:</label>
+        <input type="number" id="alto">
+      </div>
+      <div class="input-container">
+        <label>Ingrese el Fondo en cm:</label>
+        <input type="number" id="ancho">
+      </div>
+      <div class="input-container">
+        <button id="capacityButton">Calcular Capacidad</button>
+      </div>
+      <div>
+        <label>Capacidad en litros:</label>
+        <span id="litros"></span>
+      </div>
+      <div>
+        <label>Capacidad en galones americanos:</label>
+        <span id="galones"></span>
+      </div>
+    </div>
+
+    <script src="calculadora.js"></script>
+  </body>
+</html>
